@@ -1,0 +1,16 @@
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\SlutprojektetXY.exe
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\SlutprojektetXY.deps.json
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\SlutprojektetXY.runtimeconfig.json
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\SlutprojektetXY.runtimeconfig.dev.json
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\SlutprojektetXY.dll
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\ref\SlutprojektetXY.dll
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\bin\Debug\net5.0\SlutprojektetXY.pdb
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.csprojAssemblyReference.cache
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.AssemblyInfoInputs.cache
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.AssemblyInfo.cs
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.csproj.CoreCompileInputs.cache
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.dll
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\ref\SlutprojektetXY.dll
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.pdb
+C:\Users\filip.creydt\Documents\Programering 2\Uppgifter\Slutprojektet XY\SlutprojektetXY\obj\Debug\net5.0\SlutprojektetXY.genruntimeconfig.cache
