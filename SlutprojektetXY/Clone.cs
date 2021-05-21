@@ -102,16 +102,17 @@ namespace SlutprojektetXY
             Console.ReadLine();
         }
         
-        public void getStats()//Är inte detta perfekt för polimorfi? Kika på det!!
+        public void GetStats()//Är inte detta perfekt för polimorfi? Kika på det!!
         {
             Dictionary<string, int> cloneStats = new Dictionary<string, int>();
-
+            
             cloneStats.Add("hp", 75);
             cloneStats.Add("attack", 75);
             cloneStats.Add("defense", 75);
             cloneStats.Add("agility", 75);
             cloneStats.Add("special", 50);
 
+            System.Console.WriteLine("Stats: ");
             foreach (string key in cloneStats.Keys)
             {
                 Console.WriteLine(key + ": " + cloneStats[key]);

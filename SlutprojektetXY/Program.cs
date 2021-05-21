@@ -40,14 +40,18 @@ namespace SlutprojektetXY
 
             while(PlayerClone.GetAlive() == true)
             {
+                Console.Clear();
+                System.Console.WriteLine("Name:" + PlayerClone.name);
+                Console.WriteLine("Class:" + ClonePatrol[0]);
+                Console.WriteLine("");
                 /*PlayerClone.xp = 10;
                 PlayerClone.LevelUp();*/ //Testar LevelUp
 
                 //Console.WriteLine("Class:" + ClonePatrol[0]/* .hp exempelvis om man bara vill skriva ut HP */);
 
-                PlayerClone.getStats();
+                PlayerClone.GetStats();
 
-                Console.ReadLine();
+                //Lägg till att man nu kan välja att uppgradera sina stats
 
                 //Queue<int> attackOrder = new Queue<int>(); 
                 /*Ideen bakom kösystemet är att olika klasser ska ha olika weight,
@@ -65,8 +69,6 @@ namespace SlutprojektetXY
                 //Console.WriteLine("Hp:" + ClonePatrol[0].Hp);//Skriver ut instansens 
 
                 Console.ReadLine();
-
-                Console.Clear();
             }
         }
     }
