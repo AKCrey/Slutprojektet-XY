@@ -106,17 +106,19 @@ namespace SlutprojektetXY
         {
             Dictionary<string, int> cloneStats = new Dictionary<string, int>();
             
-            cloneStats.Add("hp", 75);
-            cloneStats.Add("attack", 75);
-            cloneStats.Add("defense", 75);
-            cloneStats.Add("agility", 75);
-            cloneStats.Add("special", 50);
+            cloneStats.Add("hp", Hp);
+            cloneStats.Add("attack", attack);
+            cloneStats.Add("defense", defense);
+            cloneStats.Add("agility", agility);
+            cloneStats.Add("special", special);
 
             System.Console.WriteLine("Stats: ");
+            int number = 1;
             foreach (string key in cloneStats.Keys)
             {
-                Console.WriteLine(key + ": " + cloneStats[key]);
-            }
+                Console.WriteLine(number + " " + key + ": " + cloneStats[key]);
+                number = number + 1;
+            } 
         }
         //public /*virtual/override (Polymorfism, man kan nu använda metoder i Subklasser*/ void Run()
         /*{
@@ -126,5 +128,70 @@ namespace SlutprojektetXY
                 hp = 0; 
             }
         }*/
+        public int SpendSkillPoints()
+        {
+            GetStats();
+
+            Console.WriteLine("You have " + skillPoints + " SkillPoints to spend");
+
+            System.Console.WriteLine("Write the number of the skill you want to upgrade");
+
+            string userChoice1 = Console.ReadLine();
+
+            while (userChoice1 != "1" && userChoice1 != "2" && userChoice1 != "3")
+            {
+                Console.WriteLine("Choose one number listed above");
+                userChoice1 = Console.ReadLine();
+            }
+
+            if (userChoice1 == "1")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("How many points to you want to spend on HP");
+                Console.WriteLine("Current SkillPoints: " + skillPoints);
+
+                string amountChoice1 = Console.ReadLine(); /*Det man skriver in sparas som en string*/
+
+                //Kontrollera att dumma användare inte skriver in ord eller nåt annat trams...
+
+                int amountChoice1int = 0;
+
+                bool success = int.TryParse(amountChoice1, out amountChoice1int); /*Eftersom man vill göra matte så gör jag om stringen still en int*/
+
+                skillPoints = skillPoints - amountChoice1int;
+
+                amountChoice1int = SkillPointCheck(amountChoice1int, amountChoice1);//While-loopen som checkar att man inte gett för högt värde
+
+                Hp = Hp + amountChoice1int;
+
+                Console.WriteLine("SkillPoints left: " + skillPoints);
+
+            }
+
+            Console.ReadLine();
+
+            Console.Clear();
+
+            GetStats();
+
+            return skillPoints;
+        }
+        public int SkillPointCheck(int amountChoice1int, string amountChoice1)
+        {
+            while (skillPoints < 0)
+            {
+                skillPoints = 25;
+
+                Console.WriteLine("You can't spend more than you have");
+
+                amountChoice1 = Console.ReadLine(); /*Nu börjar det om igen*/
+
+                bool success = int.TryParse(amountChoice1, out amountChoice1int);
+
+                skillPoints = skillPoints - amountChoice1int;
+            }
+
+            return amountChoice1int;
+        }
     }
 }

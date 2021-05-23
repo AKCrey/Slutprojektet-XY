@@ -17,7 +17,7 @@ namespace SlutprojektetXY
             string a = PlayerClone.ChooseClass();
             int answ;
             bool success = int.TryParse(a, out answ);
-            while(answ != 1 && answ != 2)
+            while(answ != 1 && answ != 2)//Detta skulle kunna flyttas till som en metod i en klass
             {
                 Console.Clear();
                 Console.WriteLine("Wrong input!");
@@ -41,15 +41,17 @@ namespace SlutprojektetXY
             while(PlayerClone.GetAlive() == true)
             {
                 Console.Clear();
-                System.Console.WriteLine("Name:" + PlayerClone.name);
+                System.Console.WriteLine("Name:" + PlayerClone.name);//Lägg till detta i en GetInfo metod
                 Console.WriteLine("Class:" + ClonePatrol[0]);
                 Console.WriteLine("");
-                /*PlayerClone.xp = 10;
-                PlayerClone.LevelUp();*/ //Testar LevelUp
+                
+                PlayerClone.Xp = 10;
+                PlayerClone.LevelUp(); //Testar LevelUp
 
                 //Console.WriteLine("Class:" + ClonePatrol[0]/* .hp exempelvis om man bara vill skriva ut HP */);
 
-                PlayerClone.GetStats();
+                PlayerClone.SpendSkillPoints();
+                //PlayerClone.GetStats();//Ett Dictionary för "Clone"-stats, ändra detta så det länkar till rätt klon!
 
                 //Lägg till att man nu kan välja att uppgradera sina stats
 

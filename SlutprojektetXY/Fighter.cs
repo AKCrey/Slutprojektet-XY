@@ -11,7 +11,7 @@ namespace SlutprojektetXY
         protected int agility;//Ökar chansen att dodga attacker helt 
         protected int special;//Special attack skadar mer och kan användas oftare mellan rundor
         
-        public int xp; //ändra till protected efter ändringar i Main
+        protected int xp; //ändra till protected efter ändringar i Main
         protected int level;
         protected float levelBar = 1.5f;
         protected int skillPoints = 25;
@@ -23,9 +23,21 @@ namespace SlutprojektetXY
         List<string> Skills = new List<string>() {"HP", "DMG", "Defense", "Agility"};
 
         //Gör en list som innehåller olika skills man kan välja mellan. En Write metod kommer att skriva ut namnen på skillsen
-        //men eftersom olike klasser kommer ha olika skills så måste de ändras slightly, och det är där Polymorfism kommer in? 
-        //Försök få med inkapsling också
 
+        public virtual int Xp{//En property
+            get
+            {
+                return xp;
+            }
+            set
+            {
+                xp = value;
+                if (xp < 0)
+                {
+                    xp = 0;
+                }
+            }
+        }
         public virtual int Hp{//En property, kortare version av koden under
             get
             {
